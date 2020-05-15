@@ -44,10 +44,18 @@ public class Map_2 {
     //The classic word-count algorithm: given an array of strings, return a Map<String, Integer> with a key
     // for each different string, with the value the number of times that string appears in the array.
     public Map<String,Integer> wordCount(String[] strings){
+        //solution : set the input array of string as keys to the map and the value
+        // will be the number of times it appears on the string array - count
         Map<String,Integer> map = new HashMap<>();
-
         for (String i : strings){
-
+            if (!map.containsKey(i)){
+                map.put(i,1);
+            }
+            else{
+                //get current value (count) of i
+                int count = map.get(i);
+                map.put(i,count+1);
+            }
         }
         return map;
     }
@@ -56,13 +64,47 @@ public class Map_2 {
     // Given an array of non-empty strings, return a Map<String, String> with a key
     // for every different first character seen, with the value of all the strings
     // starting with that character appended together in the order they appear in the array.
-//    public Map<String,Integer> firstChar(String[] strings){
-//
-//    }
+    public Map<String,String> firstChar(String[] strings){
+        //solution : set the first char as keys to the map
+        //the keys wil determine if the string starts with that key value
+        Map<String,String> map = new HashMap<>();
+        for (String i : strings){
+            if (!map.containsKey(i.substring(0,1))){
+                map.put(i.substring(0,1), i);
+            }
+            else {
+                String storedString = map.get(i.substring(0,1)) + i;
+                map.put(i.substring(0,1), storedString);
+            }
+        }
+        return map;
+    }
 
 
-    // Loop over the given array of strings to build a result string like this: when a string appears the 2nd, 4th, 6th, etc. time in the array, append the string to the result. Return the empty string if no string appears a 2nd time.
-//    public int wordAppend(){
+    // Loop over the given array of strings to build a result string like this:
+    // when a string appears the 2nd, 4th, 6th, etc. time in the array, append the string to the result.
+    // Return the empty string if no string appears a 2nd time.
+    public String wordAppend(String[] strings){
+        //solution : set the strings value as keys
+        Map<String,String> map = new HashMap<>();
+        String storedWord = "";
+        for (String i : strings){
+            if (!map.containsKey(i.substring(0,1))){
+                map.put(i.substring(0,1), i);
+            }
+            else{
+                storedWord += map.get(i.substring(0,1)) + i;
+            }
+
+        }
+        return storedWord;
+    }
+
+
+
+    // Given an array of strings, return a Map<String, Boolean> where each different string is a key
+    // and its value is true if that string appears 2 or more times in the array.
+//    public Map<String,Boolean> wordMultiple(String[] strings){
 //
 //    }
 

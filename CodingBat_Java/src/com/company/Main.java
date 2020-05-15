@@ -21,8 +21,8 @@ public class Main {
 
         // multiple addition of string on array
         Map_2 map_2 = new Map_2();
-        String[] data = new String[]{"a", "b", "a", "c", "b"};
-        map_2.wordCount(data);
+        String[] data = new String[]{"a", "b", "a", "c", "a", "d", "a"};
+        System.out.println(map_2.wordAppend(data));
 
 
         Strings_1 strings_1 = new Strings_1();

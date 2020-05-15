@@ -53,8 +53,8 @@ def makes10(a, b):
         return False
 
 
-# Given an int n, return True if it is within 10 of 100 or 200.
-# Note: abs(num) computes the absolute value of a number.
+# The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation.
+# We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
 def near_hundred(n):
     if 110 >= n >= 90 or 210 >= n >= 190:
         return True
@@ -65,45 +65,42 @@ def near_hundred(n):
 # Given 2 int values, return True if one is negative and one is positive.
 # Except if the parameter "negative" is True, then return True only if both are negative.
 def pos_neg(a, b, negative):
-    if not negative and a > 0 > b or b > 0 > a:
+    if (a > 0 > b or b > 0 > a) and not negative:
         return True
-    elif negative and a < 0 and b < 0:
+    elif (a < 0 and b < 0) and negative:
         return True
     else:
         return False
 
 
+# Given a string, return a new string where "not " has been added to the front.
+# However, if the string already begins with "not", return the string unchanged.
+def not_string(str):
+    if str[0:3] == "not":
+        return str
+    else:
+        return "not " + str
 
 
+# Given a non-empty string and an int n, return a new string where the char at index n has been removed.
+# The value of n will be a valid index of a char in the original string
+# (i.e. n will be in the range 0..len(str)-1 inclusive).
+def missing_char(str, n):
+    return str[0:n] + str[n + 1:]
 
 
+# Given a string, return a new string where the first and last chars have been exchanged.
+def front_back(str):
+    if len(str) == 1:
+        return str
+    return str[len(str) - 1:len(str)] + str[1:len(str) - 1] + str[0:1]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Given a string, we'll say that the front is the first 3 chars of the string.
+# If the string length is less than 3, the front is whatever is there.
+# Return a new string which is 3 copies of the front.
+def front3(str):
+    if len(str) < 3:
+        return str * 3
+    else:
+        return str[0:3] * 3
