@@ -1,0 +1,14 @@
+String methods
+    .substring(int beginIndex, int endIndex)  -> output : String
+    .startsWith(String prefix, int toffset)   -> output : boolean
+    .charAt(int index)                        -> output : char
+    .contains(CharSequence s)                 -> output : boolean
+    .indexOf(String str, int fromIndex)       -> output : int
+    .endsWith(String suffix)                  -> output : boolean
+
+-----------------------------------------------------------------------------------------------------------------
+
+error encountered :
+    Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+solution :
+    try subtracting 1 on the length of the for loop range
