@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="935df654-aea4-4e2f-8b63-5c7189ffdca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CodingBat_Java/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingBat_Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingBat_Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingBat_Java/out/production/CodingBat/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingBat_Java/out/production/CodingBat/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingBat_Java/out/production/CodingBat/com/company/Map_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingBat_Java/out/production/CodingBat/com/company/Map_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingBat_Java/out/production/CodingBat/com/company/Strings_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingBat_Java/out/production/CodingBat/com/company/Strings_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingBat_Java/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingBat_Java/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CodingBat_Java/src/com/company/Map_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodingBat_Java/src/com/company/Map_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/String_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/String_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Warmup_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Warmup_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/List_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/READ ME.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/String_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,12 +26,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1bt7dLMitDTOVaAsLAX4S12wq0i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\donat\Documents\codingbat\CodingBat_Python" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -117,7 +121,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

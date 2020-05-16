@@ -1,0 +1,3 @@
+error encountered:
+    IndexError: list index out of range
+solution : try subtracting 1 on len()
