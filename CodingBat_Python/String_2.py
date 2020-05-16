@@ -45,31 +45,25 @@ def count_code(str):
 # ignoring upper/lower case differences (in other words, the computation should not be "case sensitive").
 # Note: s.lower() returns the lowercase version of a string.
 def end_other(a, b):
-    print(a[len(b)-1:])
-    print(b)
-    print(b[len(a)-1:])
-    print(a)
-
-
-# print(end_other('Hiabc', 'abc'))
-# print(end_other('AbC', 'HiaBc'))
-# print(end_other('abc', 'abXabc'))
+    # need to make the input as str() data type
+    # to be able to use string builtin methods
+    str(a)
+    str(b)
+    # need to convert to lower/upper case - string builtin methods
+    if a.lower().endswith(b.lower()) or b.lower().endswith(a.lower()):
+        return True
+    else:
+        return False
 
 
 # Return True if the given string contains an appearance of "xyz"
-# where the xyz is not directly preceeded by a period (.).
+# where the xyz is not directly preceded by a period (.).
 # So "xxyz" counts but "x.xyz" does not.
 def xyz_there(str):
-    for i in range(0, len(str) - 1, 1):
-        if str[i:i+4] == ".xyz":
-            return False
-        elif str[i:i+3] == "xyz":
-            return True
-
-
-
-print(xyz_there('abcxyz'))
-
-
-
-
+    # solution : replace the condition which will return false (.xyz)
+    # with "" , then use if-else so that it will fall on else condition
+    str = str.replace(".xyz", "")
+    if 'xyz' in str:
+        return True
+    else:
+        return False
